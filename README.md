@@ -1,6 +1,6 @@
 # delay-sleep
 
-A Fabric mod that delays the earliest time you can sleep in a bed by default. It can also be configured to allow sleeping earlier instead.
+A Fabric mod that delays the earliest time you can sleep by default, but can also be configured to allow sleeping earlier.
 
 ## Requirements
 
