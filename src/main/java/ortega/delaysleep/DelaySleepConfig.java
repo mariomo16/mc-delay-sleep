@@ -18,8 +18,8 @@ public final class DelaySleepConfig {
     public static final int TICKS_PER_DAY = 24000;
     public static final int VANILLA_MIN_TICK_CLEAR = 12542;
     public static final int VANILLA_MIN_TICK_RAIN = 12010;
-    public static final int DEFAULT_MIN_TICK_CLEAR = 17843;
-    public static final int DEFAULT_MIN_TICK_RAIN = 13188;
+    public static final int DEFAULT_MIN_TICK_CLEAR = 16000;
+    public static final int DEFAULT_MIN_TICK_RAIN = 13000;
 
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
 
