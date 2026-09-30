@@ -1,6 +1,6 @@
 # delay-sleep
 
-Fabric mod that delays the earliest time you can sleep in a bed.
+A Fabric mod that delays the earliest time you can sleep in a bed by default. It can also be configured to allow sleeping earlier instead.
 
 ## Requirements
 
@@ -15,19 +15,25 @@ The `config/delay-sleep.json` file is created on first launch:
 
 ```json
 {
-  "minTickClear": 17843,
-  "minTickRain": 13188
+  "minTickClear": 16000,
+  "minTickRain": 13000
 }
 ```
 
-| Key            | Applies when        | Default | Vanilla |
-| -------------- | ------------------- | ------- | ------- |
-| `minTickClear` | Clear weather       | 17843   | 12542   |
-| `minTickRain`  | Rainy weather       | 13188   | 12010   |
+| Key            | Applies when         | Default | Vanilla |
+| -------------- | -------------------- | ------- | ------- |
+| `minTickClear` | Clear weather        | 16000   | 12542   |
+| `minTickRain`  | Rain or thunderstorm | 13000   | 12010   |
 
 Values range from `0` to `23999` (one full day) and are given in ticks since the
 start of the day cycle (tick `0` = 6:00 AM). By default, `minTickClear` is
-~11:50 PM and `minTickRain` ~7:11 PM.
+~10:00 PM and `minTickRain` ~7:00 PM.
+
+Setting a value **higher** than the vanilla tick delays sleep, while a value
+**lower** than the vanilla tick lets you sleep earlier.
+
+> If you already have a `config/delay-sleep.json` from an older version, your saved values still take priority.
+> Delete that file to pick up the defaults above.
 
 ## Building
 
